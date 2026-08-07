@@ -49,13 +49,3 @@ class ContaBancaria:
                     arquivo1.write(f"SAQUE DE {self.saldo} | Saldo atual: {self.saldo-self.valor}\n")
             self.saldo -= self.valor
 
-usuario = ContaBancaria(titular = "", saldo = 0.0)
-usuario.depositar(0.0)
-usuario.sacar(0.0)
-
-conta = GerenciadorContas()
-conta.adicionar_conta(usuario)
-conta.salvar_contas("contas.txt")
-
-conta2 = GerenciadorContas()
-conta2.carregar_contas("contas.txt")

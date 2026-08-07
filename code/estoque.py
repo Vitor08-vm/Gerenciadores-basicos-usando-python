@@ -30,16 +30,3 @@ class Estoque:
                 self.produtos.append(linha)
         return self.produtos        
 
-Material1 = Produto(id = "ID_0123", nome = "Martelo", preco = 5.00, quantidade = 100)
-Material2 = Produto(id = "ID_0001", nome = "Chave de Fenda", preco = 10.00, quantidade = 50)
-Material3 = Produto(id = "ID_0003", nome = "Serra", preco = 20.00, quantidade = 250)
-
-estoque = Estoque()
-
-estoque.adicionar_produto(Material1)
-estoque.adicionar_produto(Material2)
-estoque.adicionar_produto(Material3)
-
-estoque.salvar_estoque("estoque.txt")
-estoque2 = Estoque()
-print(estoque2.carregar_estoque("estoque.txt"))

@@ -29,9 +29,3 @@ class Agenda:
                 self.agenda_salvar.append(amigo)
         return self.agenda_salvar
 
-#exemplo de uso    
-amigo = Contato(nome = "", telefone = "", email = "")
-contact = Agenda()
-contact.adicionar_contato(amigo)
-contact.salvar_contatos("agenda.txt")
-

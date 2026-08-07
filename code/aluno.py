@@ -33,9 +33,3 @@ class Aluno:
     def calcular(self,nota1,nota2):
         self.media = (self.nota1 + self.nota2) / (2)
         return self.media
-
-#exemplo de uso
-aluno = Aluno(nome = "",nota1 = "",nota2 = "") 
-salvar_aluno(aluno,"alunos.txt")
-
-print(listar_aprovados("alunos.txt"))

@@ -43,16 +43,3 @@ class ListaTarefas:
                 tarefa = Tarefa(titulo, descricao, prioridade, concluida == "True") 
                 self.lista_salvar.update({titulo:tarefa})
 
-commitment = Tarefa(titulo = "Estudar G.A", descricao = "das 9 às 12:00", prioridade = "Alta", concluida = False)
-
-task_daily = ListaTarefas()
-task_daily.adicionar(commitment)
-task_daily.concluir(commitment.titulo)
-
-task_daily.salvar("tarefas.txt")
-task_daily2 = ListaTarefas()
-task_daily2.carregar("tarefas.txt")
-
-
-
-                

@@ -30,7 +30,3 @@ class LogParser:
                     arq.write(f"[{erro}] {mensagem}\n")
             else:
                 arq.write(f"Nenhum log critico ou erro econtrado")
-
-Analise = LogParser()
-Analise.analisar_arquivos("Server.log.txt")
-Analise.gerar_relatorios("Relatorio.txt")
